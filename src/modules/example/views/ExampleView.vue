@@ -1,7 +1,7 @@
 <script lang="ts" setup>
   import { mapActions, storeToRefs } from 'pinia';
   import { onMounted, ref } from 'vue';
-  import Hello from '@/components/Hello.vue';
+  import Hello from '@/components/HelloWho.vue';
   import { useCounterStore } from '@/store/example';
   import { usePokemonStore } from '@/store/pokemon';
 
