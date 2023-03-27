@@ -18,5 +18,30 @@
     "ecmaVersion": 2021
   },
   "plugins": [],
-  "rules": {}
+  "rules": {
+    "prefer-promise-reject-errors": "off",
+
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "semi": ["error", "always"],
+    "dot-notation": ["error"],
+    "object-curly-spacing": [
+      "error",
+      "always",
+      { "objectsInObjects": true, "arraysInObjects": true }
+    ],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "brace-style": ["error", "stroustrup"],
+
+    "vue/script-indent": ["error", 2, { "baseIndent": 1 }]
+  },
+  "overrides": [
+    {
+      "files": "*.vue",
+      "rules": {
+        "indent": "off"
+      }
+    }
+  ]
 }

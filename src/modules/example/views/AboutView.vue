@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-  import { usePokemonStore } from "@/store/modules/pokemon";
-  import { storeToRefs } from "pinia";
+  import { usePokemonStore } from '@/store/modules/pokemon';
+  import { storeToRefs } from 'pinia';
 
   const pokemon = usePokemonStore();
   const { pokemonsName } = storeToRefs(pokemon);

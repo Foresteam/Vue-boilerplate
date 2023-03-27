@@ -1,3 +1,10 @@
 {
-  "recommendations": ["johnsoncodehk.volar"],
+  "recommendations": [
+    "vue.volar",
+    "vue.vscode-typescript-vue-plugin",
+    "esbenp.prettier-vscode",
+    "christian-kohler.path-intellisense",
+    "sibiraj-s.vscode-scss-formatter",
+    "dbaeumer.vscode-eslint"
+  ],
 }

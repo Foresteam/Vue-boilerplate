@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "lint": "eslint --ext .ts,vue --ignore-path .gitignore .",
+    "lint": "eslint --ext .ts,vue --ignore-path .gitignore . --fix",
     "test:unit": "jest"
   },
   "dependencies": {
@@ -26,7 +26,7 @@
     "@vue/test-utils": "^2.0.0-rc.17",
     "@vue/vue3-jest": "^27.0.0-alpha.4",
     "eslint": "^8.6.0",
-    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^8.2.0",
     "husky": "^8.0.3",
     "jest": "^27.5.1",
@@ -50,6 +50,6 @@
     }
   },
   "lint-staged": {
-    "*.{ts,vue}": "eslint --fix"
+    "*.{ts,vue}": "eslint --fix --max-warnings=0"
   }
 }
