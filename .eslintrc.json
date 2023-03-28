@@ -8,23 +8,16 @@
     "es2021": true,
     "node": true
   },
-  "extends": [
-    "plugin:vue/vue3-recommended",
-    "eslint:recommended",
-    "@vue/typescript/recommended",
-    "prettier"
-  ],
+  "extends": "@antfu",
   "parserOptions": {
     "ecmaVersion": 2021
   },
-  "plugins": [],
   "rules": {
     "prefer-promise-reject-errors": "off",
 
     "quotes": ["error", "single", { "avoidEscape": true }],
     "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
-    "semi": ["error", "always"],
     "dot-notation": ["error"],
     "object-curly-spacing": [
       "error",
@@ -34,7 +27,10 @@
     "comma-spacing": ["error", { "before": false, "after": true }],
     "brace-style": ["error", "stroustrup"],
 
-    "vue/script-indent": ["error", 2, { "baseIndent": 1 }]
+    "semi": ["error", "always"],
+    "@typescript-eslint/semi": ["error", "always"],
+
+    "vue/script-indent": ["error", 2, { "baseIndent": 0 }]
   },
   "overrides": [
     {
