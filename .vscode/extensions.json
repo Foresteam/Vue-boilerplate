@@ -5,6 +5,10 @@
     "esbenp.prettier-vscode",
     "christian-kohler.path-intellisense",
     "sibiraj-s.vscode-scss-formatter",
-    "dbaeumer.vscode-eslint"
-  ],
+    "dbaeumer.vscode-eslint",
+    "zignd.html-css-class-completion",
+    "ecmel.vscode-html-css",
+    "bradlc.vscode-tailwindcss",
+    "formulahendry.auto-rename-tag"
+  ]
 }
