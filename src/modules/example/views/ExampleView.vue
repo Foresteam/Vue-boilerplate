@@ -28,8 +28,14 @@ onMounted(() => pokemon.getPokemons());
     <h3>Counter using Pinia Store</h3>
     <p>Counter: {{ counter }}</p>
     <p>Double counter: {{ doubleCounter }}</p>
-    <button @click="increment">Increment</button>
-    <button @click="reset">Reset store</button>
-    <div v-for="(poke, i) of pokemonsName" :key="i">{{ poke }}</div>
+    <button @click="increment">
+      Increment
+    </button>
+    <button @click="reset">
+      Reset store
+    </button>
+    <div v-for="(poke, i) of pokemonsName" :key="i">
+      {{ poke }}
+    </div>
   </div>
 </template>
