@@ -6,6 +6,8 @@
     "dev": "vite --host",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
+    "precommit": "lint-staged",
+    "prepare": "husky install && npx husky add .husky/pre-commit 'yarn lint-staged'",
     "lint": "eslint --ext .ts,vue --ignore-path .gitignore . --fix",
     "test:unit": "jest"
   },
@@ -41,11 +43,6 @@
     "follow-redirects": "^1.14.8",
     "nanoid": "^3.3.3",
     "minimist": "^1.2.6"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.{ts,vue}": "eslint --fix --max-warnings=0"
