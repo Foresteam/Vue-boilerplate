@@ -1,0 +1,1 @@
+Let's imagine the app is big and we have some modules. Although they can be omitted and simplified if not.

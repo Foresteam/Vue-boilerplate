@@ -5,18 +5,18 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Example',
-    component: () => import('../modules/example/views/ExampleView.vue'),
+    component: () => import('../modules/example/views/ExampleView.vue')
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import('../modules/example/views/AboutView.vue'),
-  },
+    component: () => import('../modules/example/views/AboutView.vue')
+  }
 ];
 
 const router = createRouter({
   history: createWebHistory(),
-  routes,
+  routes
 });
 
 export default router;
