@@ -7,7 +7,7 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "precommit": "lint-staged",
-    "prepare": "husky install && npx husky add .husky/pre-commit 'yarn lint-staged'",
+    "prepare": "husky install && rm .husky/pre-commit; npx husky add .husky/pre-commit 'yarn precommit'",
     "lint": "eslint --ext .ts,vue --ignore-path .gitignore . --fix",
     "test:unit": "jest"
   },
