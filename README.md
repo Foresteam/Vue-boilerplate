@@ -7,7 +7,7 @@ This template should help get you started developing with Vue 3 and Typescript i
 ## 🔨 Configured development tools:
 
 - [Vue 3](https://v3.vuejs.org/) - The framework
-- [Vite](https://vitejs.dev/) - With type check
+- [Vite](https://vitejs.dev/) - With type check. Auto start on IDE startup
 - [Typescript](https://www.typescriptlang.org/) - Strict types
 - [Vue Router](https://router.vuejs.org/)
 - [Pinia](https://pinia.vuejs.org/)
