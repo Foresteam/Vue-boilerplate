@@ -1,4 +1,4 @@
-import { api } from '../../src/http/example/api';
+import { api } from '../../src/plugins/api';
 
 test('fetchPokemons', async () => {
   const response = await api('/pokemon?limit=20');

@@ -15,7 +15,10 @@
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
     "types": ["vite/client", "@types/jest"],
     "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }],
-    "paths": { "@/*": ["src/*"] }
+    "paths": {
+      "@/*": ["src/*"],
+      "@c/*": ["src/components/*"]
+    }
   },
   "include": [
     "src/**/*.ts",

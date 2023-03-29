@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import { api } from '@/http/example/api';
+import { api } from '@/plugins/api';
 
 export const usePokemonStore = defineStore('pokemon', {
   state: () => ({
